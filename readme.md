@@ -65,20 +65,3 @@ This service uses a **GraphQL** API to provide a structured feed, fetching posts
 
 ---
 
-## 🗃️ Project Structure
-
-```
-├── docker-compose.yml        # Docker Compose file to run the service
-├── Dockerfile                # Dockerfile to build Go service image
-├── gqlgen.yml                # gqlgen configuration
-├── main.go                   # Entry point, starts GraphQL & gRPC servers
-├── graph
-│   ├── schema.graphqls       # GraphQL schema definition
-│   ├── resolver.go           # Resolver dependencies injection
-│   └── schema.resolvers.go   # Resolver implementations
-├── data.go                   # Mock data for users, followers, and posts
-├── go.mod & go.sum           # Go modules and dependencies
-└── proto                     # gRPC definitions
-```
-
---
